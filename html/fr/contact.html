@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/mystyles.css">
+    <script src="https://kit.fontawesome.com/b8a4a1dff5.js" crossorigin="anonymous"></script>
+    <title>Samier Fabien : contacter</title>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <header class="has-background-primary is-fluid block">
+            <div class="columns is-mobile is-centered" id="banner">
+                <div class="column has-text-centered">
+                    <div class="block">
+                        <figure class="image is-128x128 is-inline-block" id="banner-image">
+                            <img class="is-rounded has-background-white"
+                                src="../../images/head-square.jpg">
+                        </figure>
+                    </div>
+                    <div class="block is-inline-block" id="first-look-text">
+                        <h1 class="title is-3">
+                            Samier Fabien
+                        </h1>
+                        <h2 class="subtitle is-5">
+                            Concepteur, développeur d'applications
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nav">
+                <nav class="navbar is-primary" id="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="infos.html">
+                            <span class="icon is-medium"">
+                                <i class=" fas fa-user-circle fa-1x"></i>
+                            </span>
+                            Situation
+                        </a>
+
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                            data-target="navbarCV">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navbarCV" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item" href="skills.html">
+                                <span class="icon is-medium"">
+                                    <i class=" fas fa-book-open fa-1x"></i>
+                                </span>
+                                Compétences
+                            </a>
+
+                            <a class="navbar-item" href="experiences.html">
+                                <span class="icon is-medium"">
+                                    <i class=" fas fa-briefcase fa-1x"></i>
+                                </span>
+                                Expériences
+                            </a>
+
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link">
+                                    <span class="icon is-medium"">
+                                        <i class=" fas fa-plus fa-1x"></i>
+                                    </span>
+                                    Plus
+                                </a>
+
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item" href="hobbies.html">
+                                        <span class="icon is-medium"">
+                                            <i class=" far fa-comment-dots fa-1x"></i>
+                                        </span>
+                                        Sur mes loisirs
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <div class="buttons">
+                                    <a class="button is-primary" href="contact.html">
+                                        <span class="icon is-medium">
+                                            <i class="far fa-envelope fa-1x"></i>
+                                        </span>
+                                        <strong>Contacter</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container block" id="articlesContainer">
+
+            <form action="http://localhost:80/www/php_exercices/view/exFormulaires01.php" method="GET" class="box has-background-primary-light putInsideAnim" novalidate>
+                <h3 class="title is-4">
+                    Formulaire de contact :
+                </h3>
+                <div class="field">
+                    <label class="label">Nom*</label>
+                    <div class="control">
+                        <input name="nom" class="input" type="text" placeholder="Votre nom" id="nom" required>
+                    </div>
+                    <p class="help">Exemples valides : 'Dupont', 'dupont, 'Jean-Claude'', 'N'Diaye'.</p>
+                </div>
+
+                <div class="field">
+                    <label class="label">Prénom*</label>
+                    <div class="control">
+                        <input name="prenom" class="input" type="text" placeholder="votre prénom" id="prenom" required>
+                    </div>
+                    <p class="help">Exemples valides : 'Dupont', 'dupont, 'Jean-Claude'', 'N'Diaye'.</p>
+                </div>
+
+                <div class="field">
+                    <label class="label">Email*</label>
+                    <div class="control has-icons-left">
+                        <input name="email" class="input is-danger" type="email" placeholder="Votre e-mail" id="email" required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                    <p class="help">De la forme : 'moi@exemple.com'.</p>
+                </div>
+
+                <div class="field">
+                    <label class="label">Message*</label>
+                    <div class="control">
+                        <textarea name="message" class="textarea" placeholder="Textarea" id="message" required></textarea>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button type="submit" class="button is-link" id="submit">Envoyer</button>
+                    </div>
+                    <div class="control">
+                        <button type="reset" class="button is-white">Cancel</button>
+                    </div>
+                </div>
+                <p class="help">* = champs obligatoire.</p>
+            </form>
+
+        </div>
+
+        <footer class="footer has-background-dark has-text-grey-light block" id="footer">
+            <div class="content has-text-centered">
+                <div>
+                    <p>Tout le contenu de ce site est placé sous licence Creative Commons CC BY-NC-SA</p>
+                    <p>Réalisé avec HTML, CSS, JavaScript, Sass et <a href="https://bulma.io/">Bulma</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../../js/burgerTransform.js"></script>
+    <script src="../../js/formVerif.js"></script>
+</body>
+
+</html>
